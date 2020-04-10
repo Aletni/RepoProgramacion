@@ -147,5 +147,18 @@ Human: <request index="1"/>
 <bot name="name"/>: <response index="1"/>
 </template>
 </category>	
+	
+<addmap>barrios</addmap>
+	
+<addmap><new>madrid:chueca</new>conjunto</addmap>
+	
+<addmap><new>madrid:alcala</new>conjunto</addmap>
+	
+<addset>ciudades</addset>
+	
+<addset><new>madrid</new>ciudades</addset>
+	
+<addset><new>barcelona</new>ciudades</addset>
+	
 
 </aiml>
