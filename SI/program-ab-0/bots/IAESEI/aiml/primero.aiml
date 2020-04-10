@@ -160,5 +160,9 @@ Human: <request index="1"/>
 	
 <addset><new>barcelona</new>ciudades</addset>
 	
+<botprop><name>nacionalidad</name><val>gallego</val></botprop>
+	
+<botprop><name>equipo</name><val>rapido_de_bouzas</val></botprop>
+	
 
 </aiml>
