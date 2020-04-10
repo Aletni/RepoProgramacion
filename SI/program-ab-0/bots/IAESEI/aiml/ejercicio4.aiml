@@ -1,4 +1,4 @@
-<?xml version=“1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
 
@@ -6,7 +6,7 @@
 <category>
 <pattern>Como son los ojos de <set>compis</set></pattern>
 <template>
-<star/> tiene los ojos  <map name=“ojos”><star/></map>.</template>
+<star/> tiene los ojos  <map name="ojos"><star/></map>.</template>
 
 </category>
 
@@ -24,7 +24,7 @@ Nose cual es el color de ojos de <star/>.
 <category>
 <pattern>Como es el pelo de <set>compis</set></pattern>
 <template>
-El color de pelo de <star/> es <map name=“pelo”><star/></map>.</template>
+El color de pelo de <star/> es <map name="pelo"><star/></map>.</template>
 
 </category>
 

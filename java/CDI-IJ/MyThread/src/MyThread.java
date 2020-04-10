@@ -5,11 +5,11 @@ class MyThread extends Thread {
 
     @Override
     public void run() {
-        System.out.println("Executing thread " + Thread.currentThread().getName());
+        System.out.println("Ejecutando hilo: " + Thread.currentThread().getName());
     }
 
     public static void main(String[] args) throws InterruptedException {
-        MyThread myThread = new MyThread("myThread");
+        MyThread myThread = new MyThread("Mi Hilo");
         myThread.start();
     }
 }

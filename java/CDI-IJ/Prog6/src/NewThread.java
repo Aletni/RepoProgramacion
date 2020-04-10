@@ -10,7 +10,7 @@ public class NewThread implements Runnable {
     @Override
     public void run() {
         try {
-            for (int i = 5; i >0 ; i--) {
+            for (int i = 3; i >0 ; i--) {
                 System.out.println("Hilo hijo " + i);
                 Thread.sleep(500);
             }

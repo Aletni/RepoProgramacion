@@ -2,7 +2,7 @@ public class MyRunnable implements Runnable {
     public void run() {
 
         //Muestra informacion del hilo actual
-        System.out.println("Executing thread " + Thread.currentThread().getName());
+        System.out.println("Ejecutando hilo " + Thread.currentThread().getName());
     }
 
     public static void main(String[] args) throws InterruptedException {

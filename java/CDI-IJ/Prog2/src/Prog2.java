@@ -10,7 +10,7 @@ public class Prog2 extends Thread{
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Prog2 myThread = new Prog2("miHilo");
+        Prog2 myThread = new Prog2("Mi Hilo");
         myThread.start();
     }
 }

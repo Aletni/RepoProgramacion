@@ -79,15 +79,20 @@ El <get var="color"/> es un color inapropiado en este lugar
 
 <!-- Regla 12-->
 <category> 
-<pattern>Cual es la capital de *</pattern>
+<pattern>Cual es la capital de <set>pais</set></pattern>
 <template> La capital de <star/> es <map name="capital"><star/></map>.</template> 
 </category>
 
 <!-- Regla 13-->
 <category> 
 <pattern>Cual es la capital de *</pattern>
-<template> No se cual es la capital de <star/>.</template> 
+<template> No lo se </template> 
 </category>
+
+
+
+
+
 
 <!-- Regla 14-->
 <category>
@@ -102,27 +107,27 @@ El <get var="color"/> es un color inapropiado en este lugar
 <template> Lo prefieres solo o con leche</template> 
 </category>
 
-<!-- Regla 16-->
-<category> 
-<pattern>Cuenta hasta<set>number</set></pattern>
+<!-- Regla 16 -->
+<category>
+<pattern> Cuenta hasta <set>number</set> </pattern>
 <template>
- <think>
-  <setvar="contador">1</set>
-  <setvar="salida">1</set>
-  </think>
-   <condition var="contador">
-   <li><value><star/></value><get var="salida"/></li>
-   <li>
-    <think>
-     <set var="contador">
-     <map name="successor"><get var="contador"/></map>
-     </set>
-     <set var="salida"><get var="salida"/> <get var="contador"/></set>
-     </think>
-     <loop/>
-   </li>
-  </condition>
-  </template>
-  </category>
+	<think>
+		<set var="cont">1</set>
+		<set var="out">1</set>
+	</think>
+	<condition var="cont">
+		<li><value><star/></value><get var="out"/></li>
+		<li>
+			<think>
+			<set var="cont">
+				<map name="successor"><get var="cont"/></map>
+			</set>
+			<set var="out"><get var="out"/>, <get var="cont"/></set>
+			</think>
+			<loop/>
+		</li>
+	</condition>
+</template>
+</category>
 
 </aiml>

@@ -11,8 +11,8 @@ class Prog5 {
             // wait for other threads to end
             Thread.sleep(1000);
         } catch (InterruptedException e) {
-            System.out.println("Main thread interrupted");
+            System.out.println("Hilo principal interrumpido");
         }
-        System.out.println("Main thread Exiting");
+        System.out.println("Saliendo del hilo principal");
     }
 }

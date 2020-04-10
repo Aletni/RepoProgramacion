@@ -15,13 +15,26 @@ public class Prog7 {
 
             l1.next().start();
         }
+
         for(Thread l : threadList){
-            System.out.println(l.getName()+" esta vivo:"+l.isAlive());
-            if(l.isAlive()){
+
                 l.join();
+                System.out.println("Terminado realmente " + l.getName());
             }
 
+
+/*
+        l1 = threadList.iterator();
+        while (l1.hasNext()) {
+            Thread t = l1.next();
+            try {
+                t.join();
+                System.out.println("Terminado realmente " + t.getName());
+            } catch (InterruptedException e) {
+                System.out.println("Error");
+            }
         }
+*/
         System.out.println("El programa ha terminado");
     }
 }

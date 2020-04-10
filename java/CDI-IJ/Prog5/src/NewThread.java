@@ -5,7 +5,7 @@ class NewThread implements Runnable {
     NewThread(String threadname) {
         name = threadname;
         t = new Thread(this,name);
-        System.out.println("New thread " + t);
+        System.out.println("Hilo nuevo " + t);
     }
 
     public void run() {
@@ -13,10 +13,11 @@ class NewThread implements Runnable {
             for (int i = 5; i > 0; i--) {
                 System.out.println("Child Thread " + i);
                 Thread.sleep(500);
+
             }
         } catch (InterruptedException e) {
-            System.out.println("Child interrupted.");
+            System.out.println("Hijo interrumpido.");
         }
-        System.out.println("Exiting child thread.");
+        System.out.println("Saliendo del hijo hilo.");
     }
 }

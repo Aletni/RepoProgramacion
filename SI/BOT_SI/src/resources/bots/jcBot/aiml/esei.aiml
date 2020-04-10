@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- I have no answer for that -->
+
+
+<!-- Regla basica -->
+<category>
+<pattern>Hola ^  </pattern>
+<template>Hola, bienvenido,soy OLIesei el asistente virtual de la Univerdidad de Vigo y de la ESEI, en que puedo ayudarte?</template >
+</category>
+
+
+
+<!-- 1 regla -->
+<category>
+<pattern>Hablame un poco sobre la Universidad de Vigo</pattern>
+<template>La Universidad de Vigo es una institucion nueva y dinamica que le ofrece una gran oferta de formación en los tres campus especializados e innovadores que la componen.
+Estamos presentes en los municipios de Ourense, Pontevedra y Vigo con tres campus especializados donde encontraras mas de 30 centros de formacion e investigacion, asi como instalaciones deportivas y de ocio,
+con una programacion cultural continua. Tambien tenemos el Campus de Excelencia Internacional, Campus do Mar, dirigido por la Universidad de Vigo y que suma mas de 3000 investigadores,
+formando una red transfronteriza de investigacion y conocimiento con el mar como fuerza impulsora.
+
+En nuestros campus puedes estudiar 122 grados y masteres oficiales, 39 programas de doctorado, cuatro programas de grado conjunto y cuatro titulos dobles con universidades extranjeras.
+Tambien ofrecemos cientos de programas, eventos, talleres y cursos de idiomas y, por supuesto, nuestro programa para personas mayores.
+
+La Universidad de Vigo se ha basado en fondos positivos, basados en la transparencia y la buena gestion, integracion, igualdad, diversidad y respeto por el medio ambiente.
+Apostamos por la especializacion y la investigacion de calidad, y como institucion comprometida con el entorno social y económico, la transferencia de conocimiento a la sociedad es fundamental para nosotros,
+por eso nos esforzamos por la investigación para revertir continuamente el desarrollo social.</template>
+</category>
+
+
+<!-- Regla 1.1-->
+<category>
+<pattern> ^ Informacion ^ Universidad ^</pattern>
+<template><srai>Hablame un poco sobre la Universidad de Vigo</srai></template>
+</category>
+
+<!-- Regla 1.2-->
+<category>
+<pattern> Como es la Universidad ^  </pattern>
+<template><srai>Hablame un poco sobre la Universidad de Vigo</srai></template>
+</category>
+
+<!-- Regla 1.2-->
+<category>
+<pattern> Hablame ^ Universidad ^  </pattern>
+<template><srai>Hablame un poco sobre la Universidad de Vigo</srai></template>
+</category>
+
+
+
+
+<!-- 2 regla -->
+<category>
+<pattern>Donde se encuentra la ESEI</pattern>
+<template>La ESEI se encuentra en el Edificio Politecnico del Campus de Ourense</template >
+</category>
+
+<!-- Regla 2.1-->
+<category>
+<pattern> Donde esta la ESEI </pattern>
+<template><srai>Donde se encuentra la ESEI</srai></template>
+</category>
+
+<!-- Regla 2.2-->
+<category>
+<pattern>Como ^ a la ESEI</pattern>
+<template><srai>Donde se encuentra la ESEI</srai></template>
+</category>
+
+<!-- Regla 2.3-->
+<category>
+<pattern>Por donde ^ ESEI</pattern>
+<template><srai>Donde se encuentra la ESEI</srai></template>
+</category>
+
+<!-- Regla 2.4-->
+<category>
+<pattern> ^ ubicacion ^ ESEI</pattern>
+<template><srai>Donde se encuentra la ESEI</srai></template>
+</category>
+
+<!-- Regla 2.5-->
+<category>
+<pattern> Donde ^ facultad ^</pattern>
+<template><srai>Donde se encuentra la ESEI</srai></template>
+</category>
+
+<!-- Regla 2.6-->
+<category>
+<pattern> ^ ubicacion ^ ESEI</pattern>
+<template><srai>Donde se encuentra la ESEI</srai></template>
+</category>
+
+
+<!-- 3 regla -->
+<category>
+<pattern>Que puedo estudiar en la ESEI </pattern>
+<template>
+Actualmente se puede estudiar el Grado en Ingenieria Informatica, el Programa Conjunto ADE + EI y el Master Universitario en Ingenieria Informatica.
+</template>
+</category>
+
+
+<!-- Regla 3.1-->
+<category>
+<pattern>Que estudiar ^</pattern>
+<template><srai>Que puedo estudiar en la ESEI</srai></template>
+</category>
+
+<!-- Regla 3.2-->
+<category>
+<pattern>^ Estudios ^</pattern>
+<template><srai>Que puedo estudiar en la ESEI</srai></template>
+</category>
+
+<!-- Regla 3.3-->
+<category>
+<pattern>Que carreras ^</pattern>
+<template><srai>Que puedo estudiar en la ESEI</srai></template>
+</category>
+
+<!-- Regla 3.4-->
+<category>
+<pattern>Que grados ^</pattern>
+<template><srai>Que puedo estudiar en la ESEI</srai></template>
+</category>
+
+
+
+
+
+<!-- 4 regla -->
+<category>
+<pattern>Por que merece la pena estudiar en la ESEI</pattern>
+<template>
+Los profesionales y el material puesto a disposicion del alumnado garantizan una adecuada formacion en una disciplina tan amplia y de gran valor actual en el plano laboral.
+</template>
+</category> 
+
+ <!-- Regla 4.1-->
+<category>
+<pattern>Debo estudiar ^ ESEI</pattern>
+<template><srai>Por que merece la pena estudiar en la ESEI</srai></template>
+</category>
+
+  <!-- Regla 4.2-->
+<category>
+<pattern>Que tiene ^ ESEI *</pattern>
+<template><srai>Por que merece la pena estudiar en la ESEI</srai></template>
+</category>
+
+<!-- 5 regla -->
+<category>
+<pattern>Hay una cafeteria en la ESEI</pattern>
+<template>
+Hay una cafetería en la ESEI. Se encuentra en la salida este del Edificio Politécnico y abre de 8:00 a 20:00 horas de lunes a viernes.  
+</template>
+</category>
+
+<!-- Regla 5.1-->
+<category>
+<pattern>Cafeteria ^ ESEI</pattern>
+<template><srai>Hay una cafeteria en la ESEI</srai></template>
+</category>
+ 
+ <!-- Regla 5.2-->
+<category>
+<pattern> Hay ^ Cafeteria ^ ESEI</pattern>
+<template><srai>Hay una cafeteria en la ESEI</srai></template>
+</category>
+ 
+  <!-- Regla 5.3-->
+<category>
+<pattern> Hay ^ comer ^ ESEI</pattern>
+<template><srai>Hay una cafeteria en la ESEI</srai></template>
+</category>
+ 
+   <!-- Regla 5.4-->
+<category>
+<pattern>La ESEI ^ comer</pattern>
+<template><srai>Hay una cafeteria en la ESEI</srai></template>
+</category>
+ 
+<!-- 6 regla -->
+<category>
+<pattern>Donde se encuentra la Secretaria de la ESEI</pattern>
+<template>
+La secretaría de la ESEI se encuentra a mano derecha tras entrar por la puerta principal del Edificio Politécnico, en el vestíbulo. 
+</template>
+</category> 
+ 
+<!-- 6.1 regla -->
+<category>
+<pattern>Tiene ^ secretaria ^  </pattern>
+<template><srai>Donde se encuentra la Secretaria de la ESEI</srai></template>
+</category>
+
+<!-- 6.1 regla -->
+<category>
+<pattern>Donde ^ secretaria ^  </pattern>
+<template><srai>Donde se encuentra la Secretaria de la ESEI</srai></template>
+</category>
+
+<!-- 6.1 regla -->
+<category>
+<pattern>Como llego ^ secretaria ^  </pattern>
+<template><srai>Donde se encuentra la Secretaria de la ESEI</srai></template>
+</category>
+
+<!-- 7 regla -->
+<category>
+<pattern>Que horario de atencion al publico tiene la secretaria del centro</pattern>
+<template>
+La secretaría del centro atiende al público de lunes a viernes, de 9:00 a 14:00 horas
+</template>
+</category> 
+ 
+<!-- 7.1 regla -->
+<category>
+<pattern>Cuando ^ secretaria ^  </pattern>
+<template><srai>Que horario de atencion al publico tiene la secretaria del centro</srai></template>
+</category> 
+
+<!-- 7.2 regla -->
+<category>
+<pattern>En que horario ^ secretaria ^  </pattern>
+<template><srai>Que horario de atencion al publico tiene la secretaria del centro</srai></template>
+</category> 
+
+<!-- 7.3 regla -->
+<category>
+<pattern>Cual es ^ horario ^ secretaria ^  </pattern>
+<template><srai>Que horario de atencion al publico tiene la secretaria del centro</srai></template>
+</category>
+ 
+ 
+<!-- 8 regla -->
+<category>
+<pattern>En que consiste el PAT</pattern>
+<template>
+El PAT (Plan de Acción Tutorial) de la Escuela de Ingeniería Informática (ESEI) es un programa de atención personalizada dirigido a nuevos estudiantes.
+Su objetivo es facilitar la integración de los estudiantes en la vida universitaria en general y en ESEI en particular.
+</template>
+</category>
+ 
+<!-- 8.1 regla -->
+<category>
+<pattern>Que es ^ PAT^</pattern>
+<template><srai>En que consiste el PAT</srai></template>
+</category>
+ 
+ <!-- 8.2 regla -->
+<category>
+<pattern>Puedes ^ PAT^</pattern>
+<template><srai>En que consiste el PAT</srai></template>
+</category> 
+ 
+ <!-- 8.3 regla -->
+<category>
+<pattern>De que va ^ PAT^</pattern>
+<template><srai>En que consiste el PAT</srai></template>
+</category> 
+ 
+  <!-- 8.4 regla -->
+<category>
+<pattern> ^ PAT ^</pattern>
+<template><srai>En que consiste el PAT</srai></template>
+</category> 
+
+
+
+
+<!-- 9 regla -->
+<category>
+<pattern>Cual es el protocolo de acogida de alumnos con necesidades educativas especiales</pattern>
+<template>
+El PAT (Plan de Acción Titorial) fue creado para gestionar este tipo de situaciones respecto al alumnado, entre otras.
+</template>
+</category> 
+
+  <!-- 9.1 regla -->
+<category>
+<pattern> Hay un protocolo ^</pattern>
+<template><srai>Cual es el protocolo de acogida de alumnos con necesidades educativas especiales</srai></template>
+</category>
+ 
+<!-- 9.2 regla -->
+<category>
+<pattern> Existe ^  protocolo ^</pattern>
+<template><srai>Cual es el protocolo de acogida de alumnos con necesidades educativas especiales</srai></template>
+</category> 
+
+<!-- 9.3 regla -->
+<category>
+<pattern>  ^  necesidades educativas especiales ^</pattern>
+<template><srai>Cual es el protocolo de acogida de alumnos con necesidades educativas especiales</srai></template>
+</category>  
+
+<!-- 10 regla -->
+<category>
+<pattern>Existe una delegacion de alumnos en la ESEI</pattern>
+<template>
+La ESEI dispone de una delegación de alumnos, conocida como ESEIDA
+</template>
+</category> 
+
+<!-- 10.1 regla -->
+<category>
+<pattern>  ^ delegacion ^</pattern>
+<template><srai>Existe una delegacion de alumnos en la ESEI</srai></template>
+</category>
+ 
+ <!-- 10.2 regla -->
+<category>
+<pattern> Hay ^ delegacion ^</pattern>
+<template><srai>Existe una delegacion de alumnos en la ESEI</srai></template>
+</category> 
+ 
+ <!-- 10.3 regla -->
+<category>
+<pattern>  Tiene ^ ESEI ^ delegacion ^</pattern>
+<template><srai>Existe una delegacion de alumnos en la ESEI</srai></template>
+</category>
+ 
+
+
+
+<!-- 11 regla -->
+<category>
+<pattern>Que es el suplemento europeo al titulo</pattern>
+<template>
+El suplemento de título europeo (SET) es el documento que otorga validez comunitaria al plan de estudios académico.
+Consiste en un apego al título universitario en el que se estudian las materias estudiadas, las lenguas enseñadas, los créditos obtenidos, las competencias adquiridas, los resultados académicos.
+y la calificación profesional del graduado, maestro o doctorado, con sus nombres y apellidos, entre otras acreditaciones confiables en toda Europa.
+</template>
+</category> 
+
+  <!-- 11.1 regla -->
+<category>
+<pattern> ^ suplemento ^</pattern>
+<template><srai>Que es el suplemento europeo al titulo</srai></template>
+</category>
+ 
+   <!-- 11.2 regla -->
+<category>
+<pattern> De que va ^ suplemento ^</pattern>
+<template><srai>Que es el suplemento europeo al titulo</srai></template>
+</category> 
+
+
+<!-- 12 regla -->
+<category>
+<pattern>¿Que tipo de practicas puedo realizar como alumno de la ESEI?</pattern>
+<template>
+ 
+Puede realizar prácticas tanto curriculares como no curriculares. Los planes de estudio, administrados por la escuela, son prácticas que se incluyen en el plan de estudios de los estudiantes.
+(ya sea opcional como en el Grado en Ingeniería Informática, u obligatorio, como en el Máster en Ingeniería Informática). Son obligatorios durante el año académico,
+porque tienen el carácter administrativo de cualquier otro asunto. Los no curriculares son gestionados por FUVI. Son más flexibles para la empresa y el alumno,
+porque entre otras preguntas pueden ser convocadas y atendidas en cualquier momento, la compañía puede seleccionar al estudiante entre los solicitantes, y se puede hacer
+fuera del año académico. De acuerdo con las regulaciones de la Universidad, estas prácticas deben pagarse si exceden las 240 horas y no pueden durar más de 6 meses.
+</template>
+</category> 
+
+<!--  12.1 regla -->
+<category>
+<pattern>¿Que ^ practicas puedo * ESEI?</pattern>
+<template><srai>¿Que tipo de practicas puedo realizar como alumno de la ESEI?</srai></template>
+</category>
+
+<!--  12.2 regla -->
+<category>
+<pattern>¿ ^ tipo de practicas ^?</pattern>
+<template><srai>¿Que tipo de practicas puedo realizar como alumno de la ESEI?</srai></template>
+</category>
+ 
+ <!--  12.3 regla -->
+<category>
+<pattern>¿Como son ^ practicas ^?</pattern>
+<template><srai>¿Que tipo de practicas puedo realizar como alumno de la ESEI?</srai></template>
+</category>
+
+<!--  13 regla -->
+<category>
+<pattern>¿Donde puedo consultar la oferta de practicas en empresas?</pattern>
+<template>
+En la siguiente direccion de la pagina web de la ESEI (https://esei.uvigo.es/docencia/practicas-en-empresa/) puedes encontrar un listado de las ofertas disponibles.
+</template>
+</category> 
+
+<!--  13.1 regla -->
+<category>
+<pattern>¿Donde ^ consultar la oferta de practicas ^?</pattern>
+<template><srai>¿Donde puedo consultar la oferta de prácticas en empresas?</srai></template>
+</category>
+ 
+ <!--  13.2 regla -->
+<category>
+<pattern>¿Que practicas ^ ?</pattern>
+<template><srai>¿Donde puedo consultar la oferta de prácticas en empresas?</srai></template>
+</category>
+ 
+ <!--  13.3 regla -->
+<category>
+<pattern>¿ ^ ofertas ^ practicas ^?</pattern>
+<template><srai>¿Donde puedo consultar la oferta de prácticas en empresas?</srai></template>
+</category>
+
+
+
+
+<!-- 14 regla -->
+<category>
+<pattern>¿Con que recursos materiales y servicios cuenta la ESEI?</pattern>
+<template>
+La ESEI pone a disposicion de sus integrantes distintos espacios y herramientas para facilitar sus tareas. Dispone de aulas, laboratorios, seminarios e despachos, 
+se ofrece un servizo de correo electrónico aos membros da ESEI, una Red Wireless.
+</template>
+</category> 
+
+<!-- 14.1 regla -->
+<category>
+<pattern>¿* recursos materiales * la ESEI?</pattern>
+<template><srai>¿Con que recursos materiales y servicios cuenta la ESEI?</srai></template>
+</category>
+
+<!-- 14.2 regla -->
+<category>
+<pattern>¿* servicios * la ESEI? </pattern>
+<template><srai>¿Con que recursos materiales y servicios cuenta la ESEI?</srai></template>
+</category>
+
+<!-- 14.3 regla -->
+<category>
+<pattern>¿* recursos ^ escuela?</pattern>
+<template><srai>¿Con que recursos materiales y servicios cuenta la ESEI?</srai></template>
+</category>
+
+<!-- 14.4 regla -->
+<category>
+<pattern>¿* servicios ^ escuela?</pattern>
+<template><srai>¿Con que recursos materiales y servicios cuenta la ESEI?</srai></template>
+</category>
+
+
+<!-- 15 regla -->
+<category>
+<pattern>¿Que son los Trabajos Fin de Grado o de Máster?</pattern>
+<template>
+Los trabajos Fin de Grado y de Máster son un proyecto de investigación autónomo, cuya la finalidad de favorecer que el estudiante integre las enseñanzas recibidas durante los estudios y 
+asegurar la adquisición de las competencias propias de la titulación. El trabajo tiene que incluir una tesina fruto de una investigación, 
+que se hace bajo la supervisión de un tutor y al final se debe presentar y defender el trabajo ante un tribunal que calificará y valorará el trabajo.
+</template>
+</category> 
+
+<!-- 15.1 regla -->
+<category>
+<pattern>^ Trabajos Fin de Grado ^</pattern>
+<template><srai>¿Que son los Trabajos Fin de Grado o de Máster?</srai></template>
+</category>
+
+<!-- 15.2 regla -->
+<category>
+<pattern>^ Trabajos ^ Máster ^</pattern>
+<template><srai>¿Que son los Trabajos Fin de Grado o de Máster?</srai></template>
+</category>
+ 
+ <!-- 15.3 regla -->
+<category>
+<pattern>^ Trabajos ^</pattern>
+<template><srai>¿Que son los Trabajos Fin de Grado o de Máster?</srai></template>
+</category>
+
+ <!-- 15.4 regla -->
+<category>
+<pattern>^ Trabajo Fin de Grado ^</pattern>
+<template><srai>¿Que son los Trabajos Fin de Grado o de Máster?</srai></template>
+</category>
+
+ <!-- 15.5 regla -->
+<category>
+<pattern>^ Trabajo ^ Master ^</pattern>
+<template><srai>¿Que son los Trabajos Fin de Grado o de Máster?</srai></template>
+</category>
+
+<!-- 15.6 regla -->
+<category>
+<pattern>* TFM *</pattern>
+<template><srai>¿Que son los Trabajos Fin de Grado o de Máster?</srai></template>
+</category>
+
+
+<!-- 16 regla -->
+<category>
+<pattern>¿Como hago para acceder a la Biblioteca?</pattern>
+<template>
+La Biblioteca se encuentra en el campus sur, junto a la piscina universitaria, su apertura esta garantizado durante los horarios de las facultades e escolas, excepto no período de exames, durante el que permanece abertas ata a madrugada e durante os fins de semana. Para acceder aos servizos de préstamos deberás ter o teu carné universitario.
+</template>
+</category> 
+
+<!-- 16.1 regla -->
+<category>
+<pattern>¿Como * a la Biblioteca?</pattern>
+<template><srai>¿Como hago para acceder a la Biblioteca?</srai></template>
+</category>
+
+<!-- 16.2 regla -->
+<category>
+<pattern>¿Donde * Bibloteca?</pattern>
+<template><srai>¿Como hago para acceder a la Biblioteca?</srai></template>
+</category>
+
+<!-- 16.3 regla -->
+<category>
+<pattern>¿Donde ^ Bibloteca ^?</pattern>
+<template><srai>¿Como hago para acceder a la Biblioteca?</srai></template>
+</category>
+
+<!-- 16.4 regla -->
+<category>
+<pattern>¿ ^ entrar ^ Bibloteca?</pattern>
+<template><srai>¿Como hago para acceder a la Biblioteca?</srai></template>
+</category>
+
+<!-- 16.5 regla -->
+<category>
+<pattern>¿ ^ usar ^ Bibloteca?</pattern>
+<template><srai>¿Como hago para acceder a la Biblioteca?</srai></template>
+</category>
+
+
+<!-- 17 regla -->
+<category>
+<pattern>¿Como puedo justificar mi asistencia a las actividades de evaluacion y a sus revisiones?</pattern>
+<template>
+Mediante la firma e identificación inequívoca del alumno en cuestión en el documento correspondiente a dicha actividad o revisión.
+</template>
+</category> 
+
+<!-- 17.1 regla -->
+<category>
+<pattern>¿Como * justificar mi asistencia a las actividades ^?</pattern>
+<template><srai>¿Como puedo justificar mi asistencia a las actividades de evaluacion y a sus revisiones?</srai></template>
+</category>
+ 
+ <!-- 17.2 regla -->
+<category>
+<pattern>¿ ^ asistencia ^?</pattern>
+<template><srai>¿Como puedo justificar mi asistencia a las actividades de evaluacion y a sus revisiones?</srai></template>
+</category>
+
+
+<!-- 18 regla -->
+<category>
+<pattern>¿Que actividades deportivas ofrece la ESEI?</pattern>
+<template>
+Al ser estudiante de la Universidad de Vigo a traves de la ESEI, accedes a todas las actividades que oferta la Universidad. 
+Hay un gran abanico de opciones, de las escuelas deportivas, fitness, equipos federados y otras actividades al aire libre. Para mas informacion sobre estas y los procesos de inscripcion, 
+visita https://campusactivo.uvigo.gal/, 
+</template>
+</category> 
+
+<!-- 18.1 regla -->
+<category>
+<pattern>¿^ hacer deporte en la ESEI? </pattern>
+<template><srai>¿Que actividades deportivas ofrece la ESEI?</srai></template>
+</category>
+ 
+ <!-- 18.2 regla -->
+<category>
+<pattern>¿^ actividades deportivas ^? </pattern>
+<template><srai>¿Que actividades deportivas ofrece la ESEI?</srai></template>
+</category>
+
+ 
+ <!-- 18.3 regla -->
+<category>
+<pattern>¿^ apuntarme ^ actividades ^? </pattern>
+<template><srai>¿Que actividades deportivas ofrece la ESEI?</srai></template>
+</category>
+
+</aiml>
