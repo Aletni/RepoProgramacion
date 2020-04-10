@@ -129,5 +129,23 @@ El <get var="color"/> es un color inapropiado en este lugar
 	</condition>
 </template>
 </category>
+	
+<!-- Regla LOG -->	
+<category>
+<pattern>DIALOGDONE</pattern>
+<template> Este es un histórico del diálogo mantenido hasta la
+fecha con el bot <bot name=“name"/> de profundidad 5:
+Human: <request index="5"/>
+<bot name="name"/>: <response index="5"/>
+Human: <request index="4"/>
+<bot name="name"/>: <response index="4"/>
+Human: <request index="3"/>
+<bot name="name"/>: <response index="3"/>
+Human: <request index="2"/>
+<bot name="name"/>: <response index="2"/>
+Human: <request index="1"/>
+<bot name="name"/>: <response index="1"/>
+</template>
+</category>	
 
 </aiml>
