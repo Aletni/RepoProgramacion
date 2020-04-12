@@ -146,23 +146,34 @@ Human: <request index="2"/>
 Human: <request index="1"/>
 <bot name="name"/>: <response index="1"/>
 </template>
-</category>	
+</category>
+	
+<addset><new>austria</new>paises</addset>
+	
+<addset><new>portugal</new>paises</addset>	
 	
 <addmap>barrios</addmap>
 	
-<addmap><new>madrid:chueca</new>conjunto</addmap>
+<addmap><new>austria:viena</new>capital</addmap>
 	
-<addmap><new>madrid:alcala</new>conjunto</addmap>
+<addmap><new>portugal:lisboa</new>capital</addmap>
 	
 <addset>ciudades</addset>
 	
 <addset><new>madrid</new>ciudades</addset>
 	
-<addset><new>barcelona</new>ciudades</addset>
+<addset><new>bilbao</new>ciudades</addset>
 	
-<botprop><name>nacionalidad</name><val>gallego</val></botprop>
+	
+	
+<botprop><name>amigos</name><val>juan</val></botprop>
 	
 <botprop><name>equipo</name><val>rapido_de_bouzas</val></botprop>
-	
+
+<mail>
+ <subject>contratacion urgente</subject>
+ <to>felipe@mail.gal</to>
+ <msg>en relacion con la entrevista de trabajo reallizada me complace informarle que hemos decidido contratar sus servicios, por lo que le rogamos pase por nuestras oficinas el proximo lunes ...</msg>
+ </mail>	
 
 </aiml>
